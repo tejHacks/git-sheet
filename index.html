@@ -10,100 +10,155 @@
     <link href="assets/boxicons/css/boxicons.css" rel="stylesheet">
     <link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet">
 
-    <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.js" > </script>
-    <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"> </script>
+    <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <link href="assets/css/font-awesome.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Copied to clipboard!");
+            }).catch(err => {
+                alert("Failed to copy: ", err);
+            });
+        }
+    </script>
 </head>
-    <body class="bg-light">
-        <main>
-            <nav class="navbar navbar-dark bg-primary" aria-label="Dark offcanvas navbar">
-                <div class="container-fluid">
-                    <a class="navbar-brand navText"  href="#"><i  class="fa fa-git"></i> </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end bg-primary text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
-                        aria-labelledby="offcanvasNavbarDarkLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title text-light navText" id="offcanvasNavbarDarkLabel"><i  class="fa fa-git"> </i></h5> <hr class="divider text-light">
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active  fw-600" aria-current="page" href="home.php"><i  class="bx bx-home"></i> Home </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light  fw-600" href="#"><i  class="bx bx-book"></i> Getting Started</a>
-                                </li> 
-                                <li class="nav-item">
-                                    <a class="nav-link text-light  fw-600" href="home.php"><i  class="bx bx-book"></i> Git Tricks</a>
-                                </li> 
-                                <li class="nav-item">
-                                    <a class="nav-link text-light fw-600" href="#"><i  class="bx bxs-spreadsheet"> </i> Advanced Git </i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light fw-600" href="#"><i  class="bx bxs-printer"></i> Print Page </a>
-                                </li>
-                               
-                               
-                                <li class="nav-item">
-                                    <a class="nav-link text-light fw-600" href="#"><i  class="fa fa-arrow-down"></i> Download Cheatsheet</a>
-                                </li> 
-                                <li class="nav-item">
-                                    <a class="nav-link text-light fw-600" href="logout.php"><i  class="fa fa-user"></i> Contribute to this sheet</a>
-                                </li>
-                               
-                            </ul>
-                           
-                        </div>
+<body class="bg-light">
+    <main>
+        <nav class="navbar navbar-dark bg-primary" aria-label="Dark offcanvas navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand navText" href="#"><i class="fa fa-git"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end bg-primary text-bg-dark" tabindex="-1" id="offcanvasNavbarDark"
+                    aria-labelledby="offcanvasNavbarDarkLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-light navText" id="offcanvasNavbarDarkLabel"><i class="fa fa-git"></i></h5>
+                        <hr class="divider text-light">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active fw-600" aria-current="page" href="home.php"><i class="bx bx-home"></i> Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light fw-600" href="#"><i class="bx bx-book"></i> Getting Started</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light fw-600" href="home.php"><i class="bx bx-book"></i> Git Tricks</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light fw-600" href="#"><i class="bx bxs-spreadsheet"></i> Advanced Git</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light fw-600" href="#"><i class="bx bxs-printer"></i> Print Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light fw-600" href="#"><i class="fa fa-arrow-down"></i> Download Cheatsheet</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light fw-600" href="logout.php"><i class="fa fa-user"></i> Contribute to this sheet</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
 
-            <div class="container my-4" style="padding-bottom:120px;">
-                <p class=" fade-in" style="font-size:18px;">
-                    This is a quick reference sheet for <strong class="text-primary">  <i class="fa fa-git" ></i> </strong>.And you can find the most common Git commands here. </p>
-               
+        <div class="container my-4" style="padding-bottom:120px;">
+            <p class="fade-in" style="font-size:18px;">
+                This is a quick reference sheet for <strong class="text-primary"><i class="fa fa-git"></i></strong>. Find the most common Git commands here.
+            </p>
+            <hr>
+
+            <div class="row fade-in">
+                <h5 class="fw-bold">Create a Repository</h5>
                 <hr>
-            
-                <div class="row fade-in">
-                   <h5 class="fw-bold">Create a Repository</h5><hr>
-                   <p>Create a new local repository</p>
-                   <div class="p-3 mb-2 border border-2 fw-bold rounded bg-dark text-success" style="border-radius:3px;">&dollar; git init [project name]  <button  class="btn btn-light float-end"><i class="fa fa-clipboard"></i></button>
+                <p>Create a new local repository</p>
+                <div class="p-3 mb-2 border border-2 fw-bold rounded bg-dark text-success">
+                    $ git init [project name]
+                    <button class="btn btn-light float-end" onclick="copyToClipboard('$ git init [project name]')">
+                        <i class="fa fa-clipboard"></i>
+                    </button>
                 </div>
-                    
-                    <!-- another git command follows too -->
-                    <p>Clone a repository</p>
-                    <div class="p-3 mb-2 border border-2 fw-bold rounded bg-dark text-success" style="border-radius:3px;">&dollar; git <span class="text-warning">clone</span> git_url  <button  class="btn btn-light float-end"><i class="fa fa-clipboard"></i></button></div>
 
-                    <p>Clone a repository into a specific directory</p>
-                    <div class="p-3 mb-2 border border-2 fw-bold rounded bg-dark text-success" style="border-radius:3px;">&dollar; git <span class="text-warning">clone</span> git_url my_directory  <button  class="btn btn-light float-end"><i class="fa fa-clipboard"></i></button></div>
+                <p>Clone a repository</p>
+                <div class="p-3 mb-2 border border-2 fw-bold rounded bg-dark text-success">
+                    $ git clone git_url
+                    <button class="btn btn-light float-end" onclick="copyToClipboard('$ git clone git_url')">
+                        <i class="fa fa-clipboard"></i>
+                    </button>
+                </div>
 
+                <p>Clone a repository into a specific directory</p>
+                <div class="p-3 mb-2 border border-2 fw-bold rounded bg-dark text-success">
+                    $ git clone git_url my_directory
+                    <button class="btn btn-light float-end" onclick="copyToClipboard('$ git clone git_url my_directory')">
+                        <i class="fa fa-clipboard"></i>
+                    </button>
+                </div>
 
-                    <!-- Another set of commands -->
-                    <h5 class="fw-bold">Make a change</h5><hr>
-                    <p>Show modified files in working directory,staged for your next commit</p>
-                    <div class="p-3 mb-2 border border-2 fw-bold rounded bg-dark text-success" style="border-radius:3px;">&dollar; git status  <button  class="btn btn-light float-end"><i class="fa fa-clipboard"></i></button>
-                 </div>
+                <h5 class="fw-bold">Make a Change</h5>
+                <hr>
+                <p>Show modified files in the working directory, staged for your next commit</p>
+                <div class="p-3 mb-2 border border-2 fw-bold rounded bg-dark text-success">
+                    $ git status
+                    <button class="btn btn-light float-end" onclick="copyToClipboard('$ git status')">
+                        <i class="fa fa-clipboard"></i>
+                    </button>
+                </div>
 
-                 <p>S</p>
-                 <div class="p-3 mb-2 border border-2 fw-bold rounded bg-dark text-success" style="border-radius:3px;">&dollar; git status  <button  class="btn btn-light float-end"><i class="fa fa-clipboard"></i></button>
-              </div>
+                <p>Add changes to the staging area</p>
+                <div class="p-3 mb-2 border border-2 fw-bold rounded bg-dark text-success">
+                    $ git add [file_name]
+                    <button class="btn btn-light float-end" onclick="copyToClipboard('$ git add [file_name]')">
+                        <i class="fa fa-clipboard"></i>
+                    </button>
+                </div>
 
-                 
+                <p>Commit changes</p>
+                <div class="p-3 mb-2 border border-2 fw-bold rounded bg-dark text-success">
+                    $ git commit -m "commit message"
+                    <button class="btn btn-light float-end" onclick="copyToClipboard('$ git commit -m &quot;commit message&quot;')">
+                        <i class="fa fa-clipboard"></i>
+                    </button>
+                </div>
 
+                <h5 class="fw-bold">Branches</h5>
+                <hr>
+                <p>Create a new branch</p>
+                <div class="p-3 mb-2 border border-2 fw-bold rounded bg-dark text-success">
+                    $ git branch [branch_name]
+                    <button class="btn btn-light float-end" onclick="copyToClipboard('$ git branch [branch_name]')">
+                        <i class="fa fa-clipboard"></i>
+                    </button>
+                </div>
 
-                  
-                   
-                    </div>
-                    </div>
-                    </main>
-       
+                <p>Switch to a branch</p>
+                <div class="p-3 mb-2 border border-2 fw-bold rounded bg-dark text-success">
+                    $ git checkout [branch_name]
+                    <button class="btn btn-light float-end" onclick="copyToClipboard('$ git checkout [branch_name]')">
+                        <i class="fa fa-clipboard"></i>
+                    </button>
+                </div>
+
+                <p>Merge a branch into the current branch</p>
+                <div class="p-3 mb-2 border border-2 fw-bold rounded bg-dark text-success">
+                    $ git merge [branch_name]
+                    <button class="btn btn-light float-end" onclick="copyToClipboard('$ git merge [branch_name]')">
+                        <i class="fa fa-clipboard"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
