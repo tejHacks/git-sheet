@@ -1,0 +1,45 @@
+body{
+    background: #e2e2e2;
+}
+/* Scrollbar */
+::-webkit-scrollbar{
+    background: #00101d;
+   width:12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #808080;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #666;
+}
+
+        /* Container Styles */
+        .content-box {
+            border-radius: 10px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .content-box:hover {
+            transform: translateY(-5px);
+            background-color: #f1f1f1;
+        }
+
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
